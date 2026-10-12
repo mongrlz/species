@@ -1,0 +1,72 @@
+/* Species, digital field-guide revision. Ink / ivory / quiet cellular motion. */
+:root{--paper:#f5f3eb;--pale:#faf9f3;--ink:#252d29;--muted:#687369;--line:#d3d9cb;--green:#344c3d;--serif:'DM Sans',sans-serif;--display:'Chakra Petch','IBM Plex Mono',monospace;background:var(--paper)}
+body{background-image:none;color:var(--ink)}
+#root{position:relative;isolation:isolate}
+.cell-field{position:fixed;inset:0;width:100%;height:100%;z-index:-1;pointer-events:none}
+h1,h2,h3,.brand strong,.footer-brand{font-family:var(--display);font-weight:500;font-style:normal;letter-spacing:-.025em}
+em{font-style:normal;font-weight:inherit}
+h1{font-size:clamp(36px,4vw,62px);line-height:1.1}
+h2{font-size:28px}h3{font-size:20px}
+.brand strong{font-size:25px;letter-spacing:-.04em}.brand small{letter-spacing:.13em}
+.site-header{gap:20px}.site-header nav{gap:24px}.site-header nav a{font-family:var(--mono);font-size:12px}
+.header-status{margin-right:88px}
+.motion-toggle{position:absolute;right:34px;top:33px;z-index:11;gap:6px;padding:8px;font-family:var(--mono);font-size:9px;background:var(--paper);border-color:var(--line)}
+.motion-toggle:disabled{opacity:.65}
+.hero{grid-template-columns:minmax(0,1.3fr) minmax(0,.8fr) 88px;gap:24px;min-height:435px}
+.hero h1{font-size:clamp(40px,4.2vw,66px);line-height:1.12;letter-spacing:-.035em}
+.hero h1 em{color:#536750}
+.hero-copy>p{font-family:'DM Sans',sans-serif;font-size:16px;line-height:1.75;margin:24px 0 30px;color:var(--muted)}
+.hero-plate{background:rgba(245,243,235,.4)}
+.hero-margin,.eyebrow,.plate-meta{font-family:var(--mono)}
+.plate-caption>span{font-family:var(--mono);font-size:12px;line-height:1.6}
+.stats-strip{background:rgba(245,243,235,.82)}
+.stats-strip strong{font-family:var(--mono);font-size:34px;letter-spacing:-.055em}
+.home-search>span{font-family:'DM Sans',sans-serif;font-style:normal;font-size:12px}
+.search-box{background:var(--pale)}.search-box input{font-family:var(--mono);font-size:13px}
+.section-heading h2{font-size:26px}
+.species-card,.specimen-plate,.study,.table-scroll,.clauses,.compare-picker,.outcome-box,.raw-section,.guide-layout article,.panta-list article{background:rgba(245,243,235,.94)}
+.species-card h3,.shelf .species-card h3,.atlas-grid .species-card h3{font-family:var(--display);font-size:19px;letter-spacing:-.02em;line-height:1.25}
+.species-card p,.atlas-grid .species-card p{font-family:'DM Sans',sans-serif;font-size:12px;line-height:1.6}
+.card-meta>span:first-child{font-family:var(--mono);font-size:11px}
+.card-meta{font-size:9px}.card-foot span{font-size:9px}
+.editorial-note h2{font-size:34px}.editorial-note p{font-family:'DM Sans',sans-serif;font-size:16px;line-height:1.8}
+.figure-index{font-family:var(--mono);font-size:32px;font-style:normal}
+.page-heading h1,.specimen-detail>h1{font-size:clamp(34px,3.8vw,58px)}
+.page-heading p,.lead{font-family:'DM Sans',sans-serif;font-size:16px;line-height:1.8}
+.specimen-plate .plate-caption p{font-family:'DM Sans',sans-serif;font-style:normal;font-size:13px;line-height:1.7}
+.detail-metrics strong,.outcome-stats strong{font-family:var(--mono);font-size:28px;letter-spacing:-.035em}
+.clause-top h3{font-size:18px}.clause p{font-family:'DM Sans',sans-serif;font-size:13px;line-height:1.7}
+.clause-number{font-family:var(--mono);font-size:11px;border-radius:2px;background:#e0e5d8;color:var(--green)}
+.guide-layout p,.guide-layout article p{font-family:'DM Sans',sans-serif;font-size:16px;line-height:1.9;color:var(--muted)}
+.guide-layout h2{font-size:26px}.guide-layout article{padding:20px}
+.quiet-state p,.empty-state p,.compare-empty p,.scale-study p{font-family:'DM Sans',sans-serif;font-size:15px;line-height:1.8}
+.study h2{font-size:24px}.footer-brand{font-size:23px}
+@media(max-width:1150px){
+ .motion-toggle{right:25px}.site-header nav{margin-right:85px;gap:18px}
+ .hero{grid-template-columns:minmax(0,1.3fr) minmax(0,.8fr)}.hero h1{font-size:clamp(38px,4.6vw,56px)}
+ .stats-strip strong{font-size:29px}.detail-metrics strong{font-size:24px}
+}
+@media(max-width:760px){
+ .site-header{padding-right:0}.brand strong{font-size:22px}.brand strong span{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.25em;margin-top:5px}.brand small{display:none}
+ .brand .specimen{width:35px;height:35px}.motion-toggle{top:25px;right:64px;font-size:8px;padding:7px}.motion-toggle span{display:none}
+ .site-header nav{margin-right:0}.site-header nav a{font-size:12px}
+ .hero{grid-template-columns:minmax(0,1fr) 155px;gap:14px;min-height:340px}
+ .hero h1{font-size:clamp(31px,5.7vw,43px)}.hero-copy>p{font-size:13px;line-height:1.75}.hero-copy .eyebrow{font-size:8px}
+ .hero-plate .plate-caption>span{font-family:var(--mono);font-size:9px}.hero-plate>.specimen{height:160px}
+ .stats-strip strong{font-size:28px}.search-box input{font-size:11px}
+ .shelf .species-card h3,.atlas-grid .species-card h3{font-size:17px}.species-card p,.atlas-grid .species-card p{font-size:11px}
+ .card-meta>span:first-child{font-size:11px}.card-meta>span:last-child{font-size:8px}
+ .page-heading h1,.specimen-detail>h1{font-size:34px;overflow-wrap:anywhere}.page-heading p,.lead{font-size:14px}
+ .section-heading h2{font-size:23px}.editorial-note h2{font-size:29px}.editorial-note p{font-size:14px}
+ .clause-top h3{font-size:17px}.clause p{font-size:13px}.detail-metrics strong{font-size:24px}
+ .specimen-plate .plate-caption p{font-size:12px}.guide-layout article{padding:0}.guide-layout article p{font-size:14px}
+ .study h2{font-size:19px}.compare-plates h2{font-size:21px}.footer-brand{font-size:20px}
+}
+@media(max-width:480px){
+ .hero{grid-template-columns:1fr;position:relative;min-height:0;padding-top:32px}
+ .hero-copy{position:relative;z-index:1}.hero h1{font-size:clamp(31px,8.5vw,40px)}
+ .hero-copy>p{max-width:240px}.hero-plate{position:absolute;right:0;bottom:52px;width:100px;background:none;opacity:.75}
+ .hero-plate>.specimen{height:105px}.hero-plate .plate-meta,.hero-plate .plate-caption{display:none}
+ .hero-copy>p{padding-right:8px}.hero-copy .desktop-break{display:none}
+ .editorial-note{grid-template-columns:25px 1fr;gap:15px}
+}

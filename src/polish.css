@@ -1,0 +1,52 @@
+/* Task-first hierarchy over the existing field guide. */
+.hero-copy>p{max-width:44ch}.hero h1{font-size:clamp(38px,4vw,60px);text-wrap:balance}
+.home-search{max-width:none;margin:0 0 32px}.home-search>.search-box{max-width:900px;margin:auto}
+.example-paths{display:flex;align-items:center;justify-content:center;gap:28px;padding:22px 0}
+.example-paths>span{font-size:11px;color:var(--muted)}
+.example-paths a{display:flex;align-items:center;gap:13px;padding:10px 0;border-bottom:1px solid var(--line)}
+.example-paths a:hover{border-color:var(--green)}.example-paths strong{font-size:13px;font-weight:500}
+.example-paths small{display:block;margin-top:4px;font-size:10px;color:var(--muted)}
+.example-index{font:11px var(--mono);color:var(--muted)}
+.card-family{display:block;font:9px var(--mono);text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:0 0 8px}
+.card-foot span{line-height:1.6}.species-card p{min-height:40px}
+.detail-actions{margin:22px 0;flex-wrap:wrap}
+.inspection-overview{grid-template-columns:minmax(220px,.7fr) minmax(0,1.4fr);align-items:start;gap:40px}
+.inspection-summary{min-width:0}.inspection-summary>h2{margin:10px 0 20px}
+.inspection-summary .fee-panel{padding:22px 0 0;margin-top:20px}
+.inspection-summary .fee-panel h2{font-size:24px}
+.inspection-summary .fee-panel .section-heading{flex-wrap:wrap;gap:6px;margin-bottom:10px}
+.inspection-summary .fee-panel .section-heading>.mono{font-size:10px}
+.inspection-summary .fee-panel p{font-size:12px;line-height:1.7}
+.inspection-summary .fee-chart{margin:16px 0;max-height:220px}
+.inspection-summary .fee-facts{font-size:12px}
+.rule-facts{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line);margin-bottom:14px}
+.rule-facts>div{padding:16px 12px 16px 0;border-bottom:1px solid var(--line)}
+.rule-facts dt{font-size:11px;color:var(--muted);margin-bottom:7px}
+.rule-facts dd{font:20px var(--mono);margin:0;overflow-wrap:anywhere}
+.inspection-tabs{scroll-margin-top:24px;flex-wrap:wrap}.inspection-tabs button[aria-pressed=true]{border-bottom-color:var(--green);color:var(--green);background:#e4e8dd}
+.inspection-section>.clauses{max-width:940px}.inspection-section .evidence-panel{margin-top:0;border-top:0}
+.overview-next{display:flex;gap:32px;align-items:center;padding:26px 0}
+.overview-next h2{margin:10px 0}.overview-next p{max-width:65ch;color:var(--muted);font-size:14px;line-height:1.8}
+.overview-next .actions{min-width:200px;flex-direction:column;align-items:stretch}
+.specimen-dither .specimen-form{transform-origin:center;transition:transform .25s ease-out}
+.specimen-dither.specimen-large .specimen-form{animation:specimen-scan .85s steps(12,end) both}
+.specimen-dither:hover .specimen-form{transform:translateY(-1px)}
+@keyframes specimen-scan{from{clip-path:inset(0 0 100% 0)}to{clip-path:inset(0 0 0 0)}}
+html[data-motion=paused] .specimen-form{animation:none!important;transform:none!important;transition:none!important}
+html[data-motion=paused] .loading-mark,html[data-motion=paused] .live-table tr{animation:none}
+@media(prefers-reduced-motion:reduce){.specimen-dither .specimen-form{animation:none!important;transform:none!important;transition:none!important}}
+@media(max-width:1000px){.example-paths{gap:20px;flex-wrap:wrap}.example-paths>span{flex-basis:100%;text-align:center}.inspection-overview{grid-template-columns:240px minmax(0,1fr);gap:26px}.rule-facts dd{font-size:17px}}
+@media(max-width:760px){
+ .hero h1{font-size:clamp(31px,5.5vw,42px)}.hero-copy>p{max-width:38ch}
+ .example-paths{align-items:stretch;justify-content:flex-start;gap:12px;padding:18px 0 0}.example-paths>span{text-align:left}
+ .example-paths a{flex:1;min-width:220px}.example-paths a>svg{margin-left:auto}
+ .inspection-overview{display:flex;flex-direction:column;gap:20px}.inspection-summary{order:-1;width:100%}
+ .inspection-overview .specimen-plate{display:grid;grid-template-columns:100px 1fr;gap:5px 16px;max-width:none;width:100%;padding:16px;margin:0}
+ .inspection-overview .specimen-plate .plate-meta{grid-column:1/-1}.inspection-overview .specimen-plate>.specimen{height:100px;margin:8px 0}
+ .inspection-overview .plate-caption{text-align:left;align-self:center}.inspection-overview .plate-caption h2{font-size:20px}.inspection-overview .plate-caption p{margin:4px 0}
+ .overview-next{flex-direction:column;align-items:stretch;gap:10px}.overview-next .actions{align-items:flex-start}
+ .inspection-tabs{gap:0}.inspection-tabs button{padding:12px 10px;font-size:11px}
+ .inspection-summary .fee-chart{min-height:140px}.rule-facts dd{font-size:19px}
+ .fee-chart text{font-size:16px}
+}
+@media(max-width:480px){.hero{padding-bottom:20px}.hero-plate{position:static;opacity:1;width:100%;max-width:none;display:flex;align-items:center;justify-content:center;border-top:1px solid var(--line);margin-top:10px;padding-top:10px}.hero-plate>.specimen{width:125px;height:125px}.hero-plate .plate-caption{display:block;text-align:left;max-width:180px;padding:12px}.hero-plate .plate-caption .tiny{display:block}.hero-copy>p{max-width:none}.hero h1{font-size:36px}.home-search{margin-bottom:26px}}
